@@ -30,4 +30,7 @@ app.get("/assets/trophy.png", function(req, res) {
   res.sendFile(__dirname + "/assets/trophy.png");
 });
 
-app.listen(3000, "192.168.1.14");
+app.listen(3000, function() {
+  console.log("Server listen in 3000 port");
+});
+//app.listen(3000, "192.168.1.14");
