@@ -1,25 +1,15 @@
 // Animate Sections
+// When user leave the block use scrollSpy:exit
 $('#short-description').on('scrollSpy:enter', function() {
   $(".short-description-text").fadeIn(1500);
   $(".person-image").fadeIn(1700);
-});
-$('#short-description').on('scrollSpy:exit', function() {
-  $(".short-description-text").fadeOut();
-  $(".person-image").fadeOut();
-});
+}).scrollSpy();
 $('#skills').on('scrollSpy:enter', function() {
   $("#skills .card").fadeIn(1500);
-});
+}).scrollSpy();
 $('#achievements').on('scrollSpy:enter', function() {
   $("#achievements .list-group-item").fadeIn(1500);
-});
-$('#achievements').on('scrollSpy:exit', function() {
-  $("#achievements .list-group-item").fadeOut();
-});
-
-$('#short-description').scrollSpy();
-$('#skills').scrollSpy();
-$('#achievements').scrollSpy();
+}).scrollSpy();
 
 // Add smooth scrolling to all links
 $("a").on('click', function(event) {
@@ -34,6 +24,14 @@ $("a").on('click', function(event) {
   }
 });
 
+// LightBox click to open image
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+  event.preventDefault();
+  $(this).ekkoLightbox({
+      alwaysShowClose: true
+  });
+});
+
 // Back to Top Button
 $(window).on("scroll", function() {
   console.log(document.documentElement.scrollTop);
@@ -43,8 +41,3 @@ $(window).on("scroll", function() {
     $(".back-to-top").fadeOut();
   }
 });
-
-
-// Set Year in Footer
-var timestamp = new Date().getFullYear();
-$("#timestamp").html(timestamp);

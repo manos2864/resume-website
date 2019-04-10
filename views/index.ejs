@@ -18,14 +18,14 @@
   <section id="header">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#"><%= personName %></a>
+        <a class="navbar-brand" href="/"><%= personName %></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#"><i class="fas fa-home"></i> Home</a>
+              <a class="nav-link active" href="/"><i class="fas fa-home"></i> Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#skills"><i class="fas fa-burn"></i> Skills</a>
@@ -37,7 +37,7 @@
               <a class="nav-link" href="#"><i class="fas fa-book"></i> Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-certificate"></i> Certifications</a>
+              <a class="nav-link" href="/certifications"><i class="fas fa-certificate"></i> Certifications</a>
             </li>
           </ul>
         </div>
@@ -69,15 +69,20 @@
         <div class="col-lg-6 skills-column">
           <div class="card">
             <div class="card-header">
-              <h2 class="card-title">Category 1</h2>
+              <h2 class="card-title">Tool Skills</h2>
             </div>
             <div class="card-body">
               <div class="card-text">
-                <p>Skill 1</p>
-                <p>Skill 2</p>
-                <p>Skill 3</p>
-                <p>Skill 4</p>
-                <p>Skill 5</p>
+                <p>Expert knowledge of Graphic Application (PhotoShop).</p>
+                <p>Advanced knowledge of Webmatrix, Wamp and SQL Developer software.</p>
+                <p>Advanced knowledge of Compiler software (JGrasp, Visual Studio 2015, Android Studio and Netbeans).</p>
+                <p>Beginner's knowledge of JDeveloper software.</p>
+                <p>Beginner's knowledge of computer game engine development such as Unreal Engine 4 and Unity 5.5.</p>
+                <p>Beginner's knowledge of After Effects.</p>
+                <p>Beginner's knowledge in 3D Scan.</p>
+                <p>Beginner's Knowledge (MeshLab, Simplify3D, SketchUp 2016).</p>
+                <p>Beginner's knowledge of three-dimensional modeling (3dsMax and Blender).</p>
+                <p>Beginner's knowledge of network programs (Wireshark and Cisco Packet Tracer).</p>
               </div>
             </div>
           </div>
@@ -85,15 +90,17 @@
         <div class="col-lg-6 skills-column">
           <div class="card">
             <div class="card-header">
-              <h2 class="card-title">Category 2</h2>
+              <h2 class="card-title">Programming Skills</h2>
             </div>
             <div class="card-body">
               <div class="card-text">
-                <p>Skill 1</p>
-                <p>Skill 2</p>
-                <p>Skill 3</p>
-                <p>Skill 4</p>
-                <p>Skill 5</p>
+                <p>Advanced knowledge of Java - JavaFX, C# and Visual Basic.</p>
+                <p>Advanced knowledge of Search Engine Optimization (SEO).</p>
+                <p>Advanced knowledge on Android Development.</p>
+                <p>Advanced knowledge on relational databases (MySql, MSSQL, Oracle).</p>
+                <p>Advanced knowledge in HTML5, CSS3 and PHP.</p>
+                <p>Familiar with the integration and deployment of augmented reality applications through the Wikitude API.</p>
+                <p>Beginner's knowledge of Javascript, JQuery, nodeJS, eJS and AJAX.</p>
               </div>
             </div>
           </div>
@@ -106,22 +113,23 @@
     <div class="container-fluid">
       <h1><i class="fas fa-medal"></i> My Recent Achievements <i class="fas fa-medal"></i></h1>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item"><span class="badge badge-primary badge-dark">2018 - 2019</span> MSc Software Engineering degree with distinction</li>
-        <li class="list-group-item "><span class="badge badge-primary badge-dark">2018 - 2019</span>  Dapibus ac facilisis in</li>
-        <li class="list-group-item"><span class="badge badge-primary badge-dark">2018 - 2019</span>  Morbi leo risus</li>
-        <li class="list-group-item"><span class="badge badge-primary badge-dark">2018 - 2019</span>  Porta ac consectetur ac</li>
+        <li class="list-group-item"><span class="badge badge-primary badge-dark">2017 - 2018</span> MSc Software Engineering Degree with Distinction</li>
+        <li class="list-group-item "><span class="badge badge-primary badge-dark">2017 - 2018</span> Development of Augmented Reality Academic Guide Android App</li>
+        <li class="list-group-item"><span class="badge badge-primary badge-dark">2018 - 2019</span> Morbi leo risus</li>
+        <li class="list-group-item"><span class="badge badge-primary badge-dark">2014 - 2014</span> Participation as a v </li>
       </ul>
     </div>
   </section>
   <a href="#header" class="back-to-top" title="Back to top">
-    <i class="fa fa-arrow-circle-up"></i><p>Back to Top</p>
+    <i class="fa fa-arrow-circle-up"></i>
+    <p>Back to Top</p>
   </a>
   <section id="footer">
     <div class="container-fluid">
-        <div class="social-icons">
-          <span>Find me:</span><a href="#"><i class="fab fa-linkedin fa-2x" title="LinkedIn"></i></a><a href="#" title="Send me an email"><i class="fas fa-envelope fa-2x"></i></a>
-        </div>
-        <p>This page has been created by me! @<span id="timestamp"></span></p>
+      <div class="social-icons">
+        <span>Find me:</span><a href="#"><i class="fab fa-linkedin fa-2x" title="LinkedIn"></i></a><a href="#" title="Send me an email"><i class="fas fa-envelope fa-2x"></i></a>
+      </div>
+      <p>This page has been created by me! @<%= footerTimestamp %></p>
     </div>
   </section>
 
@@ -135,4 +143,5 @@
   <!-- Custom JavaScript -->
   <script src="/js/utility.js" type="text/javascript" charset="utf-8"></script>
 </body>
+
 </html>
