@@ -11,6 +11,9 @@ $('#achievements').on('scrollSpy:enter', function() {
   $("#achievements .list-group-item").fadeIn(1500);
 }).scrollSpy();
 
+//Animate navbar second
+$(".navbar-second").fadeIn(2000);
+
 // Add smooth scrolling to all links
 $("a").on('click', function(event) {
   if (this.hash !== "") {
