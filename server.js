@@ -9,17 +9,19 @@ var indexLogic = "";
 //Ejs engine
 app.set('view engine', 'ejs');
 //Body parser url encoded data
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 //Add static urls implementation
 app.use(express.static("public"));
 
 // Global Variables pass in every view
-app.use(function (req, res, next) {
+app.use(function(req, res, next) {
   res.locals = {
-      name: "Emmanouil Tsikniadopoulos",
-      timestamp: new Date().getFullYear()
+    name: "Emmanouil Tsikniadopoulos",
+    timestamp: new Date().getFullYear()
   };
-   next();
+  next();
 });
 
 app.get("/", function(req, res) {

@@ -4,9 +4,11 @@ $('#short-description').on('scrollSpy:enter', function() {
   $(".short-description-text").fadeIn(1500);
   $(".person-image").fadeIn(1700);
 }).scrollSpy();
+
 $('#skills').on('scrollSpy:enter', function() {
   $("#skills .card").fadeIn(1500);
 }).scrollSpy();
+
 $('#achievements').on('scrollSpy:enter', function() {
   $("#achievements .list-group-item").fadeIn(1500);
 }).scrollSpy();
@@ -31,7 +33,7 @@ $("a").on('click', function(event) {
 $(document).on('click', '[data-toggle="lightbox"]', function(event) {
   event.preventDefault();
   $(this).ekkoLightbox({
-      alwaysShowClose: true
+    alwaysShowClose: true
   });
 });
 
