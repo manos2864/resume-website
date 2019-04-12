@@ -1,6 +1,6 @@
 module.exports = {
   setIndex: function(res) {
-    res.render('certifications', {
+    res.render('portfolio', {
       personName: res.locals.name,
       footerTimestamp: res.locals.timestamp,
       homeURL: res.locals.homeURL,

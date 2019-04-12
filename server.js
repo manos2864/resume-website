@@ -19,13 +19,21 @@ app.use(express.static("public"));
 app.use(function(req, res, next) {
   res.locals = {
     name: "Emmanouil Tsikniadopoulos",
-    timestamp: new Date().getFullYear()
+    timestamp: new Date().getFullYear(),
+    homeURL: "/",
+    portfolioURL: "/portfolio",
+    certificationsURL: "/certifications"
   };
   next();
 });
 
 app.get("/", function(req, res) {
   indexLogic = require("./logic/indexLogic");
+  indexLogic.setIndex(res);
+});
+
+app.get("/portfolio", function(req, res) {
+  indexLogic = require("./logic/portfolioLogic");
   indexLogic.setIndex(res);
 });
 

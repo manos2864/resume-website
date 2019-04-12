@@ -17,24 +17,24 @@
 </head>
 
 <body>
-  
+
   <section id="header">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="/"><%= personName %></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler anim-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="anim-icon"><span></span><span></span><span></span><span></span></div>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/"><i class="fas fa-home"></i> Home</a>
+              <a class="nav-link" href="<%= homeURL %>"><i class="fas fa-home"></i> Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-book"></i> Portfolio</a>
+              <a class="nav-link" href="<%= portfolioURL %>"><i class="fas fa-book"></i> Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/certifications"><i class="fas fa-certificate"></i> Certifications</a>
+              <a class="nav-link active" href="<%= certificationsURL %>"><i class="fas fa-certificate"></i> Certifications</a>
             </li>
           </ul>
         </div>
@@ -43,29 +43,42 @@
   </section>
 
   <section id="certifications-body">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Certifications</h1>
+        <svg class="pulse" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <circle id="Oval" cx="512" cy="512" r="512"></circle>
+          <circle id="Oval" cx="512" cy="512" r="512"></circle>
+          <circle id="Oval" cx="512" cy="512" r="512"></circle>
+        </svg>
+        <p class="lead"><i class="fa fa-quote-left"></i> Below you will find all of my certifications that i have acquire with so much hard work from a variety of institutions. You will be able to check the original from the official url that i have link. <i
+            class="fa fa-quote-right"></i></p>
+      </div>
+    </div>
+
     <div class="container-fluid">
       <h1>Elements of Ai</h1>
       <hr>
       <div class="row">
-        <div class="col-lg-12"><a href="/assets/certificate-elements-of-ai.png" data-toggle="lightbox"><img src="/assets/certificate-elements-of-ai.png" class="img-fluid" alt="elements of ai certification"></a></div>
+        <div class="col-lg-12"><a href="/assets/certificate-elements-of-ai.png" data-toggle="lightbox"><img src="/assets/certificate-elements-of-ai.png" class="img-fluid rounded shadow-sm p-3 mb-5 bg-white" alt="elements of ai certification"></a></div>
         <div class="col-lg-12 url-certificate"><a href="https://certificates.mooc.fi/validate/dbuu8old3qt" target="_blank"><i class="fab fa-searchengin"></i> Check it online</a></div>
       </div>
       <h1>DEV210x: Introduction to C++</h1>
       <hr>
       <div class="row">
-        <div class="col-lg-12"><a href="/assets/certificate-microsoft-edx.png" data-toggle="lightbox"><img src="/assets/certificate-microsoft-edx.png" class="img-fluid" alt="elements of ai certification"></a></div>
+        <div class="col-lg-12"><a href="/assets/certificate-microsoft-edx.png" data-toggle="lightbox"><img src="/assets/certificate-microsoft-edx.png" class="img-fluid rounded shadow-sm p-3 mb-5 bg-white" alt="elements of ai certification"></a></div>
         <div class="col-lg-12 url-certificate"><a href="https://courses.edx.org/certificates/50b228addf7d4432b68f213174e5bfeb" target="_blank"><i class="fab fa-searchengin"></i> Check it online</a></div>
       </div>
       <h1>CS50: Introduction to Computer Science</h1>
       <hr>
       <div class="row">
-        <div class="col-lg-12"><a href="/assets/certificate-harvard-edx.png" data-toggle="lightbox"><img src="/assets/certificate-harvard-edx.png" class="img-fluid" alt="elements of ai certification"></a></div>
+        <div class="col-lg-12"><a href="/assets/certificate-harvard-edx.png" data-toggle="lightbox"><img src="/assets/certificate-harvard-edx.png" class="img-fluid rounded shadow-sm p-3 mb-5 bg-white" alt="elements of ai certification"></a></div>
         <div class="col-lg-12 url-certificate"><a href="https://courses.edx.org/certificates/a01637876017407f84bdaa62ea9b3be4" target="_blank"><i class="fab fa-searchengin"></i> Check it online</a></div>
       </div>
       <h1>Unreal Engine 4: The Complete Beginner's Course</h1>
       <hr>
       <div class="row">
-        <div class="col-lg-12"><a href="/assets/certificate-ue4-udemy.jpg" data-toggle="lightbox"><img src="/assets/certificate-ue4-udemy.jpg" class="img-fluid" alt="elements of ai certification"></a></div>
+        <div class="col-lg-12"><a href="/assets/certificate-ue4-udemy.jpg" data-toggle="lightbox"><img src="/assets/certificate-ue4-udemy.jpg" class="img-fluid rounded shadow-sm p-3 mb-5 bg-white" alt="elements of ai certification"></a></div>
         <div class="col-lg-12 url-certificate"><a href="https://www.udemy.com/certificate/UC-46G60BM7/" target="_blank"><i class="fab fa-searchengin"></i> Check it online</a></div>
       </div>
     </div>

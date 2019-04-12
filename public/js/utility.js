@@ -16,6 +16,13 @@ $('#achievements').on('scrollSpy:enter', function() {
 //Animate navbar second
 $(".navbar-second").fadeIn(2000);
 
+//Animate nav hamburger icon
+$(document).ready(function () {
+  $('.anim-btn').on('click', function () {
+    $('.anim-icon').toggleClass('open');
+  });
+});
+
 // Add smooth scrolling to all links
 $("a").on('click', function(event) {
   if (this.hash !== "") {
@@ -33,13 +40,12 @@ $("a").on('click', function(event) {
 $(document).on('click', '[data-toggle="lightbox"]', function(event) {
   event.preventDefault();
   $(this).ekkoLightbox({
-    alwaysShowClose: true
+    alwaysShowClose: false
   });
 });
 
 // Back to Top Button
 $(window).on("scroll", function() {
-  console.log(document.documentElement.scrollTop);
   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     $(".back-to-top").fadeIn();
   } else {
