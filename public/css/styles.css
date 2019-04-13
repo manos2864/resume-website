@@ -167,6 +167,70 @@ h1 {
   display: none;
 }
 
+/* Animate Highligh text in description */
+.entry-title {
+  animation: anim 3s 0s;
+  webkit-animation: anim 3s 0s forwards;
+  animation-fill-mode: forwards;
+}
+
+.entry-title:nth-child(2n) {
+  animation: anim 3s 1s;
+  webkit-animation: anim 3s 1s forwards;
+  animation-fill-mode: forwards;
+}
+
+.entry-title:nth-child(3n) {
+  animation: anim 3s 2s;
+  webkit-animation: anim 3s 2s forwards;
+  animation-fill-mode: forwards;
+}
+
+.entry-title:nth-child(4n) {
+  animation: anim 3s 3s;
+  webkit-animation: anim 3s 3s forwards;
+  animation-fill-mode: forwards;
+}
+
+.entry-title:nth-child(5n) {
+  animation: anim 3s 4s;
+  webkit-animation: anim 3s 4s forwards;
+  animation-fill-mode: forwards;
+}
+
+.entry-title:nth-child(6n) {
+  animation: anim 3s 5s;
+  webkit-animation: anim 3s 5s forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim {
+  25% {
+    background-position: -25% 0;
+  }
+
+  50% {
+    background-position: -50% 0;
+  }
+
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+.entry-title {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, rgba(216, 195, 165, 1.0) 50%);
+  background-size: 200%;
+  display: inline;
+  color: #747474;
+  transition: .5s ease-in-out;
+  text-decoration: none;
+}
+
+.entry-title:after {
+  background-position: 100% 0;
+}
+
 /* Skills Section */
 #skills {
   background-color: #D8C3A5;
@@ -226,6 +290,10 @@ h1 {
 
 #achievements .fas {
   color: #D8C3A5;
+}
+
+#download-cv .jumbotron {
+  background-color: #D8C3A5;
 }
 
 /* Certifications Page */
@@ -316,16 +384,22 @@ h1 {
   opacity: 0;
   transform-origin: 70% 70%;
   animation: pulse 4s 0.5s cubic-bezier(.5, .5, 0, 1) infinite;
+  /* For older browsers */
+  webkit-animation: pulse 4s 0.5s cubic-bezier(.5, .5, 0, 1) infinite;
 }
 
 .pulse circle:nth-child(2) {
   fill: #7fc6a4;
   animation: pulse 4s 1s cubic-bezier(.5, .5, 0, 1) infinite;
+  /* For older browsers */
+  webkit-animation: pulse 4s 1s cubic-bezier(.5, .5, 0, 1) infinite;
 }
 
 .pulse circle:nth-child(3) {
   fill: #e5f77d;
   animation: pulse 4s 1.5s cubic-bezier(.5, .5, 0, 1) infinite;
+  /* For older browsers */
+  webkit-animation: pulse 4s 1.5s cubic-bezier(.5, .5, 0, 1) infinite;
 }
 
 @keyframes pulse {
