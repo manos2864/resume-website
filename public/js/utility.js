@@ -13,6 +13,11 @@ $('#achievements').on('scrollSpy:enter', function() {
   $("#achievements .list-group-item").fadeIn(1500);
 }).scrollSpy();
 
+$('#portfolio-body .card').on('scrollSpy:enter', function() {
+  $("#portfolio-body .card").fadeIn(1500);
+}).scrollSpy();
+
+
 //Animate navbar second
 $(".navbar-second").fadeIn(2000);
 

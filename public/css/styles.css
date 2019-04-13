@@ -357,6 +357,7 @@ h1 {
 #portfolio-body .card {
   padding: 1% 1%;
   width: 100%;
+  display: none;
 }
 
 #portfolio-body .container {
