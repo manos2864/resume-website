@@ -43,5 +43,5 @@ app.get("/certifications", function(req, res) {
 });
 
 app.listen(process.env.PORT || 3000, function() {
-  console.log("Server listen in 3000 port");
+  console.log("Server listen in 3000 port"); // For local testing
 });
